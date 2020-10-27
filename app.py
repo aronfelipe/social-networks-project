@@ -10,12 +10,12 @@ class App:
 
     def loop_on_blockchain(self):
 
-        t0 = time.time()
-
         height = self.data.get_actual_height()
 
         counter_block = 0
         for n_block in range(height-10, height):
+            t0 = time.time()
+
             block = self.data.get_block_height(n_block)
             counter_block = counter_block + 1
             counter = 0
@@ -28,12 +28,17 @@ class App:
                         except Exception as e:
                             pass
 
-            t1 = time.time()
+                t1 = time.time()
+
+                total = t1-t0
+                if total > 60:
+                    break
+
+                # print(total)
+                # print(counter)
             self.report.to_xlsx()
 
-            total = t1-t0
             print(total)
-            print(counter)
 
 app = App()
 app.loop_on_blockchain()
