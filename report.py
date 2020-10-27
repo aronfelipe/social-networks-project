@@ -11,11 +11,3 @@ class Report:
 
     def to_xlsx(self):
         self.df.to_excel("transation.xlsx")
-
-# report = Report()
-
-# report.write_line("teste", "teste", "teste")
-        
-# print(report.df)
-
-# report.to_xlsx()

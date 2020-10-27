@@ -5,16 +5,14 @@ class Data:
     def __init__(self):
         self.api = API()
 
-    def get_block_height(self, height, start):
-        # return self.api.get_request('https://api.blockcypher.com/v1/btc/main/blocks/' + str(height) + '?txstart=' + str(start) + '&limit=500')
-        request = self.api.get_request('https://blockchain.info/block-height/654276?format=json')
-        # print(request)
-        return request
+    def get_block_height(self, height):
+        # TODO COLOCAR TODOS OS BLOCOS EM UMA CHAMADA.
+        response = self.api.get_request('https://blockchain.info/block-height/' + str(height) + '?format=json')
+        return response
 
     def get_transaction(self, transaction_id):
-        request = self.api.get_request('https://blockchain.info/rawtx/' + str(transaction_id))
-        # print(request)
-        return request
+        response = self.api.get_request('https://blockchain.info/rawtx/' + str(transaction_id))
+        return response
 
     def get_actual_height(self):
         return self.api.get_request('https://blockchain.info/latestblock')['height']
