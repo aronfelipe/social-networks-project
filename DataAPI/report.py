@@ -9,5 +9,5 @@ class Report:
     def write_line(self, sender, receiver, timestamp):
         self.df = self.df.append({'sender': str(sender), 'receiver': str(receiver), 'timestamp': str(timestamp)}, ignore_index=True)
 
-    def to_xlsx(self):
-        self.df.to_excel("transation.xlsx")
+    def to_xlsx(self, block_height):
+        self.df.to_excel(str(block_height) + ".xlsx")
