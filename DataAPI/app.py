@@ -65,14 +65,19 @@ class App:
 
 app = App()
 # app.loop_on_blockchain(655275, 655289)
+app.loop_on_blockchain(655300, 655303)
 # app.loop_on_blockchain(655289, 655303)
 app.loop_on_blockchain(655303, 655317)
 # app.loop_on_blockchain(655317, 655331)
 # app.loop_on_blockchain(655331, 655345)
 # app.loop_on_blockchain(655345, 655359)
 # app.loop_on_blockchain(655359, 655373)
+
+
+#3 app.loop_on_blockchain(655345, 655359)
+#4 app.loop_on_blockchain(655359, 655373)
 # app.loop_on_blockchain(655373, 655387)
-# app.loop_on_blockchain(655387, 655401)
+app.loop_on_blockchain(655387, 655401)
 # app.loop_on_blockchain(655401, 655419)
 
 # print(60 * 14)
