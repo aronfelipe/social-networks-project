@@ -73,7 +73,7 @@ app = App()
 # app.loop_on_blockchain(655359, 655373)
 # app.loop_on_blockchain(655373, 655387)
 # app.loop_on_blockchain(655387, 655401)
-# app.loop_on_blockchain(655401, 655419)
+app.loop_on_blockchain(655401, 655419)
 
 # print(60 * 14)
 # print(840 / 60 / 24)
