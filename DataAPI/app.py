@@ -72,8 +72,6 @@ app.loop_on_blockchain(655303, 655317)
 # app.loop_on_blockchain(655331, 655345)
 # app.loop_on_blockchain(655345, 655359)
 # app.loop_on_blockchain(655359, 655373)
-
-
 #3 app.loop_on_blockchain(655345, 655359)
 #4 app.loop_on_blockchain(655359, 655373)
 # app.loop_on_blockchain(655373, 655387)
