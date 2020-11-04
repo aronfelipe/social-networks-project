@@ -64,7 +64,7 @@ class App:
             self.report.to_xlsx(n_block)
 
 app = App()
-# app.loop_on_blockchain(655275, 655289)
+app.loop_on_blockchain(655275, 655289)
 # app.loop_on_blockchain(655289, 655303)
 # app.loop_on_blockchain(655303, 655317)
 #1 app.loop_on_blockchain(655317, 655331)
