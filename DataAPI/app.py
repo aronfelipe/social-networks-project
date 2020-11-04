@@ -21,7 +21,7 @@ class App:
             minute_list.append(response.json()["Data"]["Data"][i]['close'])
         
         volatility_10_minutes = np.std(minute_list, ddof = 1)
-        print(volatility_10_minutes)
+        # print(volatility_10_minutes)
         
         self.report.write_line(volatility_10_minutes, volatility_10_minutes, timestamp)
         
@@ -45,7 +45,7 @@ class App:
                         try:
                             self.report.write_line(transaction_input['prev_out']['addr'], transaction_output['addr'], transaction['time'])
                         except Exception as e:
-                            print(e)
+                            # print(e)
                             t1 = time.time()
                             total = t1-t0
                             if total > 60:
