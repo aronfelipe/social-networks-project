@@ -6,6 +6,8 @@ import numpy as np
 import time 
 import math
 
+print("Começou o processamento", flush=True)
+
 def getCentralization(centrality, c_type):
 
     c_denominator = float(1)

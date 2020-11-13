@@ -9,3 +9,4 @@ pip3 install seaborn
 pip3 install statsmodels
 pip3 install prince
 pip3 install openpyxl
+pip3 install wrapt
