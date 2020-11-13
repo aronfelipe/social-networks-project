@@ -1,0 +1,18 @@
+{'text/html': '        <script type="text/javascript">\n        window.PlotlyConfig = {MathJaxConfig: \'local\'};\n        if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}\n        if (typeof require !== \'undefined\') {\n        require.undef("plotly");\n        requirejs.config({\n            paths: {\n                \'plotly\': [\'https://cdn.plot.ly/plotly-latest.min\']\n            }\n        });\n        require([\'plotly\'], function(Plotly) {\n            window._Plotly = Plotly;\n        });\n        }\n        </script>\n        '}
+128
+655319.gml
+9.5367431640625e-07
+655278.gml
+4.76837158203125e-07
+655328.gml
+4.76837158203125e-07
+655308.gml
+2.384185791015625e-07
+655300.gml
+2.384185791015625e-07
+655329.gml
+2.384185791015625e-07
+655283.gml
+2.384185791015625e-07
+655398.gml
+2.384185791015625e-07

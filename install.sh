@@ -8,3 +8,4 @@ pip3 install pyvis
 pip3 install seaborn
 pip3 install statsmodels
 pip3 install prince
+pip3 install openpyxl
