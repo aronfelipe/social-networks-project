@@ -100,7 +100,7 @@ for rede in chunk[witch]:
     t1 = time.time()
     g = fm.load('./NetworkBuilder/network/' + rede)
     BETWEENNESS_CENTRALITY = nx.betweenness_centrality(g)
-    centralidades[rede[:-5]] = getCentralization(BETWEENNESS_CENTRALITY, "between")
+    centralidades[rede[:-4]] = getCentralization(BETWEENNESS_CENTRALITY, "between")
     t2 = time.time()
     tf = t2 - t1
     print(tf, flush=True)
