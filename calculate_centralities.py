@@ -6,6 +6,8 @@ import numpy as np
 import time 
 import math
 
+print("O", flush=True)
+
 def getCentralization(centrality, c_type):
 
     c_denominator = float(1)
@@ -91,7 +93,7 @@ chunk = chunkIt(networks, 16)
 
 chunk = np.array_split(networks, 16)
 
-witch = 0
+witch = 15
 
 for rede in chunk[witch]:
     print(rede)
