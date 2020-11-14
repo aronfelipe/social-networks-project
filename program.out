@@ -1,18 +1,83 @@
 {'text/html': '        <script type="text/javascript">\n        window.PlotlyConfig = {MathJaxConfig: \'local\'};\n        if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}\n        if (typeof require !== \'undefined\') {\n        require.undef("plotly");\n        requirejs.config({\n            paths: {\n                \'plotly\': [\'https://cdn.plot.ly/plotly-latest.min\']\n            }\n        });\n        require([\'plotly\'], function(Plotly) {\n            window._Plotly = Plotly;\n        });\n        }\n        </script>\n        '}
+Começou o processamento
 128
-655319.gml
-9.5367431640625e-07
-655278.gml
-4.76837158203125e-07
 655328.gml
-4.76837158203125e-07
-655308.gml
-2.384185791015625e-07
-655300.gml
-2.384185791015625e-07
+45780,between
+
+max node0.00019631468290036444
+
+numerator:8.98663027441947
+
+denominator:95941916935200.0
+
+3023.285498857498
+655302.gml
+24842,between
+
+max node8.463489629794284e-05
+
+numerator:2.102333710352983
+
+denominator:15329384105760.0
+
+706.2900404930115
+655383.gml
+56771,between
+
+max node6.846581676773186e-06
+
+numerator:0.3884826204167891
+
+denominator:182963446509129.0
+
+4979.251299619675
+655389.gml
+22984,between
+
+max node4.354449904937247e-06
+
+numerator:0.10003027932999874
+
+denominator:12140569131392.0
+
+609.651917219162
+655337.gml
+24539,between
+
+max node4.604801670270271e-06
+
+numerator:0.11295775062835028
+
+denominator:14775261777777.0
+
+703.5133409500122
 655329.gml
-2.384185791015625e-07
-655283.gml
-2.384185791015625e-07
-655398.gml
-2.384185791015625e-07
+49481,between
+
+max node0.00028027985317599527
+
+numerator:13.86766076852778
+
+denominator:121142867612919.0
+
+4756.594481468201
+655281.gml
+46809,between
+
+max node3.977284554895595e-06
+
+numerator:0.18611007300871157
+
+denominator:102557997688167.0
+
+4188.1501705646515
+655397.gml
+63445,between
+
+max node9.790618471371358e-06
+
+numerator:0.620974845521878
+
+denominator:255375079310075.0
+
+8387.826182365417
