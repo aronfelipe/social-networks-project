@@ -53,7 +53,7 @@ def getCentralization(centrality, c_type):
 
     print ("max node" + str(c_node_max) + "\n")
 
-    c_numerator = 0
+    c_numerator = 4
 
     for value in c_sorted:
 
