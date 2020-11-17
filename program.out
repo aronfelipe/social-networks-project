@@ -1,6 +1,36 @@
 {'text/html': '        <script type="text/javascript">\n        window.PlotlyConfig = {MathJaxConfig: \'local\'};\n        if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}\n        if (typeof require !== \'undefined\') {\n        require.undef("plotly");\n        requirejs.config({\n            paths: {\n                \'plotly\': [\'https://cdn.plot.ly/plotly-latest.min\']\n            }\n        });\n        require([\'plotly\'], function(Plotly) {\n            window._Plotly = Plotly;\n        });\n        }\n        </script>\n        '}
 Começou o processamento
 128
+655337.gml
+24539,between
+
+max node4.604801670270271e-06
+
+numerator:0.11295775062835028
+
+denominator:14775261777777.0
+
+917.9293575286865
+655313.gml
+56510,between
+
+max node1.6542285204484787e-05
+
+numerator:0.9347482246165361
+
+denominator:180451522690800.0
+
+7098.82169508934
+655289.gml
+8027,between
+
+max node0.000847246449040618
+
+numerator:6.799320510522518
+
+denominator:517072650225.0
+
+73.72224617004395
 655408.gml
 48705,between
 
@@ -10,74 +40,44 @@ numerator:0.4487649990627289
 
 denominator:115532137648575.0
 
-3893.023713827133
-655310.gml
-44101,between
+6465.612826824188
+655340.gml
+33711,between
 
-max node2.6486478398248343e-05
+max node9.00002331188203e-06
 
-numerator:1.168018824270491
+numerator:0.30332494671739824
 
-denominator:85768065765899.0
+denominator:38307970141389.0
 
-2908.0233945846558
-655291.gml
-19600,between
+2635.214029312134
+655409.gml
+52388,between
 
-max node0.00014373295296274548
+max node8.003365809588175e-06
 
-numerator:2.8168549365804365
+numerator:0.4191429502802455
 
-denominator:7528767680000.0
+denominator:143773510269984.0
 
-450.2196605205536
-655360.gml
-13756,between
+8523.512814998627
+655379.gml
+44904,between
 
-max node9.2237137504746e-06
+max node5.802896421612974e-06
 
-numerator:0.1268397859950763
+numerator:0.2604816297095788
 
-denominator:2602635530144.0
+denominator:90539010536832.0
 
-211.97745513916016
-655308.gml
-35042,between
+5717.152764558792
+655304.gml
+14661,between
 
-max node5.79555925289866e-06
+max node1.3310784029143845e-05
 
-numerator:0.20305860395234715
+numerator:0.1951050260645483
 
-denominator:43027079410560.0
+denominator:3150877596939.0
 
-1625.90700674057
-655331.gml
-2955,between
-
-max node5.055506248766216e-05
-
-numerator:0.14932188580241743
-
-denominator:25785669825.0
-
-8.0452880859375
-655300.gml
-6912,between
-
-max node6.127105826174049e-05
-
-numerator:0.4233810023283739
-
-denominator:330130391040.0
-
-47.24287819862366
-655323.gml
-24011,between
-
-max node4.882418711197934e-05
-
-numerator:1.1721283506601858
-
-denominator:13841863657089.0
-
-713.1829724311829
+354.90574955940247
