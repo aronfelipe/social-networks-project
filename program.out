@@ -1,83 +1,84 @@
 {'text/html': '        <script type="text/javascript">\n        window.PlotlyConfig = {MathJaxConfig: \'local\'};\n        if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}\n        if (typeof require !== \'undefined\') {\n        require.undef("plotly");\n        requirejs.config({\n            paths: {\n                \'plotly\': [\'https://cdn.plot.ly/plotly-latest.min\']\n            }\n        });\n        require([\'plotly\'], function(Plotly) {\n            window._Plotly = Plotly;\n        });\n        }\n        </script>\n        '}
 Começou o processamento
 128
-655287.gml
-66126,between
 
-max node3.39489341157628e-06
+655355.gml
+51463,between
 
-numerator:0.22440794044635623
+max node1.3570569887191284e-05
 
-denominator:289136968152624.0
+numerator:0.6981869589677444
 
-7135.38926076889
-655371.gml
-59446,between
+denominator:136291389829109.0
 
-max node0.00015595070860158935
+4439.5195162296295
+655364.gml
+40219,between
 
-numerator:9.27003518471444
+max node1.273673641396513e-05
 
-denominator:210064807194704.0
+numerator:0.5122120151464647
 
-7537.44195151329
-655363.gml
-35835,between
+denominator:65053730687537.0
 
-max node2.046665656033342e-06
+2409.164098262787
+655296.gml
+44843,between
 
-numerator:0.07331335891496654
+max node5.501501585876388e-05
 
-denominator:46014847513425.0
+numerator:2.466756554763564
 
-2497.586626291275
-655277.gml
-23785,between
+denominator:90170526955809.0
 
-max node4.346289799126843e-06
+3591.025079727173
+655410.gml
+57819,between
 
-numerator:0.1033161745666296
+max node6.570415236715635e-06
 
-denominator:13454666809175.0
+numerator:0.37976456641877065
 
-990.3945064544678
-655348.gml
-24850,between
+denominator:193284356410737.0
 
-max node5.7150161217151465e-05
+7740.793135643005
+655382.gml
+51932,between
 
-numerator:1.4199365366103387
+max node9.729763215148952e-06
 
-denominator:15344199080000.0
+numerator:0.505117947784086
 
-1120.0444672107697
-655313.gml
-56510,between
+denominator:140051711164320.0
 
-max node1.6542285204484787e-05
+6005.4792420864105
+655376.gml
+26448,between
 
-numerator:0.9347482246165361
+max node8.509940306571916e-06
 
-denominator:180451522690800.0
+numerator:0.2249866754094242
 
-7244.486443281174
-655378.gml
-37621,between
+denominator:18498889833984.0
 
-max node8.015676469887038e-06
+1216.3816652297974
+655379.gml
+44904,between
 
-numerator:0.30144676954174504
+max node5.802896421612974e-06
 
-denominator:53243661954779.0
+numerator:0.2604816297095788
 
-2922.652259349823
-655284.gml
-58834,between
+denominator:90539010536832.0
 
-max node2.8613832117820977e-06
+4242.347431182861
+655321.gml
+17751,between
 
-numerator:0.16828601743836588
+max node8.851123530863473e-05
 
-denominator:203643411958592.0
+numerator:1.5708646850961097
 
-8112.521322250366
+denominator:5592674419749.0
+
+514.2218408584595
