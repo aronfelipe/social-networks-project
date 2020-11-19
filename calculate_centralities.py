@@ -53,7 +53,7 @@ def getCentralization(centrality, c_type):
 
     print ("max node" + str(c_node_max) + "\n")
 
-    c_numerator = 4
+    c_numerator = 0
 
     for value in c_sorted:
 
@@ -93,18 +93,21 @@ chunk = chunkIt(networks, 16)
 
 chunk = np.array_split(networks, 16)
 
-witch = 15
+# print(chunk)
+witch = 0
 
-for rede in chunk[witch]:
-    print(rede)
-    t1 = time.time()
-    g = fm.load('./NetworkBuilder/network/' + rede)
-    BETWEENNESS_CENTRALITY = nx.betweenness_centrality(g)
-    centralidades[rede[:-4]] = getCentralization(BETWEENNESS_CENTRALITY, "between")
-    t2 = time.time()
-    tf = t2 - t1
-    print(tf, flush=True)
+for i in range(0,15):
+    print(chunk[i])
+    # for rede in chunk[i]:
+    #     print(rede)
+    #     t1 = time.time()
+    #     g = fm.load('./NetworkBuilder/network/' + rede)
+    #     BETWEENNESS_CENTRALITY = nx.betweenness_centrality(g)
+    #     centralidades[rede[:-5]] = getCentralization(BETWEENNESS_CENTRALITY, "between")
+    #     t2 = time.time()
+    #     tf = t2 - t1
+    #     print(tf, flush=True)
 
-data = {'Block': centralidades.keys(), 'Centralidade': centralidades.values()}
-volDf = pd.DataFrame.from_dict(data)
-volDf.to_excel("centralidade.xlsx")
+# data = {'Block': centralidades.keys(), 'Centralidade': centralidades.values()}
+# volDf = pd.DataFrame.from_dict(data)
+# volDf.to_excel("centralidade.xlsx")

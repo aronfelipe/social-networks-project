@@ -21,21 +21,16 @@ class App:
             minute_list.append(response.json()["Data"]["Data"][i]['close'])
         
         volatility_10_minutes = np.std(minute_list, ddof = 1)
-        # print(volatility_10_minutes)
         
         self.report.write_line(volatility_10_minutes, volatility_10_minutes, timestamp)
         
     def loop_on_blockchain(self, initial_height, final_height):
 
-        block = self.data.get_block_height(initial_height)
-
-        self.generate_volatility(block['blocks'][0]['time'])
-
         counter_block = 0
         for n_block in range(initial_height, final_height):
             t0 = time.time()
-
             block = self.data.get_block_height(n_block)
+            self.generate_volatility(block['blocks'][0]['time'])
             counter_block = counter_block + 1
             counter = 0
             for transaction in block['blocks'][0]['tx']:
@@ -44,8 +39,11 @@ class App:
                     for transaction_output in transaction['out']:
                         try:
                             self.report.write_line(transaction_input['prev_out']['addr'], transaction_output['addr'], transaction['time'])
-                        except Exception as e:
-                            # print(e)
+                            t1 = time.time()
+                            total = t1-t0
+                            if total > 60:
+                                break
+                        except:
                             t1 = time.time()
                             total = t1-t0
                             if total > 60:
@@ -64,19 +62,14 @@ class App:
             self.report.to_xlsx(n_block)
 
 app = App()
-# app.loop_on_blockchain(655275, 655289)
-app.loop_on_blockchain(655300, 655303)
-# app.loop_on_blockchain(655289, 655303)
-app.loop_on_blockchain(655303, 655317)
-# app.loop_on_blockchain(655317, 655331)
-# app.loop_on_blockchain(655331, 655345)
-# app.loop_on_blockchain(655345, 655359)
-# app.loop_on_blockchain(655359, 655373)
-#3 app.loop_on_blockchain(655345, 655359)
-#4 app.loop_on_blockchain(655359, 655373)
-# app.loop_on_blockchain(655373, 655387)
-app.loop_on_blockchain(655387, 655401)
-# app.loop_on_blockchain(655401, 655419)
+# app.loop_on_blockchain(657584, 657581+14)
+# app.loop_on_blockchain(657581+14, 657581+28)
+app.loop_on_blockchain(657581+28, 657581+42)
+app.loop_on_blockchain(657581+42, 657581+56)
+app.loop_on_blockchain(657581+56, 657581+70)
+app.loop_on_blockchain(657581+70, 657581+84)
+app.loop_on_blockchain(657581+84, 657581+98)
+app.loop_on_blockchain(657581+112, 657581+126)
 
 # print(60 * 14)
 # print(840 / 60 / 24)

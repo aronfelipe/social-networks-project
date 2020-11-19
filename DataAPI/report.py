@@ -11,3 +11,4 @@ class Report:
 
     def to_xlsx(self, block_height):
         self.df.to_excel(str(block_height) + ".xlsx")
+        self.__init__()
