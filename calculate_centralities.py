@@ -93,7 +93,7 @@ chunk = chunkIt(networks, 16)
 
 chunk = np.array_split(networks, 16)
 
-witch = 12
+witch = 13
 
 for rede in chunk[witch]:
     print(rede)
