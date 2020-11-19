@@ -69,23 +69,5 @@ app = App()
 # app.loop_on_blockchain(657581+56, 657581+70)
 app.loop_on_blockchain(657581+70, 657581+84)
 app.loop_on_blockchain(657581+84, 657581+98)
+app.loop_on_blockchain(657581+98, 657581+112)
 app.loop_on_blockchain(657581+112, 657581+126)
-
-# print(60 * 14)
-# print(840 / 60 / 24)
-
-# import numpy as np
-
-# calculo = (655404 - 651318)
-
-# print(calculo)
-
-# print()
-
-# lista = np.arange(651318, 655404, 681)
-
-# print((681 * 60) / 60 / 24)
-
-# print(144*60)
-
-# print(8640/60/24)

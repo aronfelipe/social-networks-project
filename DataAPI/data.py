@@ -6,7 +6,6 @@ class Data:
         self.api = API()
 
     def get_block_height(self, height):
-        # TODO COLOCAR TODOS OS BLOCOS EM UMA CHAMADA.
         response = self.api.get_request('https://blockchain.info/block-height/' + str(height) + '?format=json')
         return response
 
