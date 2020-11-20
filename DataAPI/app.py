@@ -1,5 +1,6 @@
-from report import Report
-from data import Data
+from DataAPI.report import Report
+from DataAPI.data import Data
+
 import time
 import numpy as np
 import requests
@@ -60,18 +61,3 @@ class App:
                     break
 
             self.report.to_xlsx(n_block)
-
-app = App()
-# app.loop_on_blockchain(657584, 657581+14)
-# app.loop_on_blockchain(657581+14, 657581+28)
-# app.loop_on_blockchain(657581+28, 657581+42)
-# app.loop_on_blockchain(657581+42, 657581+56)
-# app.loop_on_blockchain(657581+56, 657581+70)
-# app.loop_on_blockchain(657581+70, 657581+84)
-# app.loop_on_blockchain(657581+84, 657581+98)
-# app.loop_on_blockchain(657581+98, 657581+112)
-# app.loop_on_blockchain(657581+112, 657581+126)
-# app.loop_on_blockchain(657581+126, 657581+140)
-# app.loop_on_blockchain(657581+140, 657581+154)
-
-app.loop_on_blockchain(657699, 657700)

@@ -6,6 +6,9 @@ import numpy as np
 import time 
 import math
 
+from NetworkBuilder.networkBuilder import *
+from DataAPI.app import *
+
 print("Começou o processamento", flush=True)
 
 def getCentralization(centrality, c_type):
@@ -84,6 +87,52 @@ def chunkIt(seq, num):
 
     return out
 
+app = App()
+
+block_init = 657584
+
+app.loop_on_blockchain(block_init, block_init+14)
+app.loop_on_blockchain(block_init+14, block_init+28)
+app.loop_on_blockchain(block_init+28, block_init+42)
+app.loop_on_blockchain(block_init+42, block_init+56)
+app.loop_on_blockchain(block_init+56, block_init+70)
+app.loop_on_blockchain(block_init+70, block_init+84)
+app.loop_on_blockchain(block_init+84, block_init+98)
+app.loop_on_blockchain(block_init+98, block_init+112)
+app.loop_on_blockchain(block_init+112, block_init+126)
+app.loop_on_blockchain(block_init+126, block_init+140)
+
+files = paralel(5)
+print(files)
+process = []
+
+p1 = Process(target=create_dfs(files[0]))
+process.append(p1)
+p1.start()
+
+p2 = Process(target=create_dfs(files[1]))
+process.append(p2)
+p2.start()
+
+p3 = Process(target=create_dfs(files[2]))
+process.append(p3)
+p3.start()
+
+p4 = Process(target=create_dfs(files[3]))
+process.append(p4)
+p4.start()
+
+p5 = Process(target=create_dfs(files[4]))
+process.append(p5)
+p5.start()
+
+for p in process:
+    p.join()
+
+files = os.listdir('./NetworkBuilder/rawData')
+
+create_vol(files)
+
 networks = os.listdir('./NetworkBuilder/network/')
 
 print(len(networks))
@@ -92,9 +141,7 @@ chunk = chunkIt(networks, 16)
 
 chunk = np.array_split(networks, 16)
 
-witch = 15
-
-for i in range(10, 16):
+for i in range(0, 16):
     print(i)
     centralidades = {}
 

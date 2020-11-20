@@ -1,4 +1,4 @@
-from api import API
+from DataAPI.api import API
 
 class Data:
 
