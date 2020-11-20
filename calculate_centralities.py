@@ -84,7 +84,6 @@ def chunkIt(seq, num):
 
     return out
 
-centralidades = {}
 networks = os.listdir('./NetworkBuilder/network/')
 
 print(len(networks))
@@ -95,16 +94,24 @@ chunk = np.array_split(networks, 16)
 
 witch = 15
 
-for i in range(0, 10):
-    for rede in chunk[i]:
+for i in range(10, 16):
+    print(i)
+    centralidades = {}
+
+    for rede in range(0, len(chunk[i])):
         print(rede)
+        print(chunk[i][rede])
+        print(len(chunk[rede]))
         t1 = time.time()
-        g = fm.load('./NetworkBuilder/network/' + rede)
+        g = fm.load('./NetworkBuilder/network/' + chunk[i][rede])
         BETWEENNESS_CENTRALITY = nx.betweenness_centrality(g)
-        centralidades[rede[:-5]] = getCentralization(BETWEENNESS_CENTRALITY, "between")
+        centralidades[chunk[i][rede][:-4]] = getCentralization(BETWEENNESS_CENTRALITY, "between")
         t2 = time.time()
         tf = t2 - t1
         print(tf, flush=True)
+        print(centralidades)
+    
+    print(centralidades)
 
     data = {'Block': centralidades.keys(), 'Centralidade': centralidades.values()}
     volDf = pd.DataFrame.from_dict(data)
