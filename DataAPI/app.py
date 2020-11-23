@@ -26,11 +26,15 @@ class App:
         self.report.write_line(volatility_10_minutes, volatility_10_minutes, timestamp)
         
     def loop_on_blockchain(self, initial_height, final_height):
-
+        
         counter_block = 0
         for n_block in range(initial_height, final_height):
             t0 = time.time()
-            block = self.data.get_block_height(n_block)
+            try:
+                block = self.data.get_block_height(n_block)
+            except Exception as e:
+                print(e)
+                print
             self.generate_volatility(block['blocks'][0]['time'])
             counter_block = counter_block + 1
             counter = 0
@@ -61,3 +65,4 @@ class App:
                     break
 
             self.report.to_xlsx(n_block)
+
