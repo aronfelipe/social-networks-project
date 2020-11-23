@@ -89,18 +89,18 @@ def chunkIt(seq, num):
 
 app = App()
 
-block_init = 657584
+block_init = 657355
 
-app.loop_on_blockchain(block_init, block_init+14)
-app.loop_on_blockchain(block_init+14, block_init+28)
-app.loop_on_blockchain(block_init+28, block_init+42)
-app.loop_on_blockchain(block_init+42, block_init+56)
-app.loop_on_blockchain(block_init+56, block_init+70)
-app.loop_on_blockchain(block_init+70, block_init+84)
-app.loop_on_blockchain(block_init+84, block_init+98)
-app.loop_on_blockchain(block_init+98, block_init+112)
-app.loop_on_blockchain(block_init+112, block_init+126)
-app.loop_on_blockchain(block_init+126, block_init+140)
+app.loop_on_blockchain(block_init, block_init+864)
+# app.loop_on_blockchain(block_init+14, block_init+28)
+# app.loop_on_blockchain(block_init+28, block_init+42)
+# app.loop_on_blockchain(block_init+42, block_init+56)
+# app.loop_on_blockchain(block_init+56, block_init+70)
+# app.loop_on_blockchain(block_init+70, block_init+84)
+# app.loop_on_blockchain(block_init+84, block_init+98)
+# app.loop_on_blockchain(block_init+98, block_init+112)
+# app.loop_on_blockchain(block_init+112, block_init+126)
+# app.loop_on_blockchain(block_init+126, block_init+140)
 
 files = paralel(5)
 print(files)
