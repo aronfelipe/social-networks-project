@@ -87,11 +87,11 @@ def chunkIt(seq, num):
 
     return out
 
-app = App()
+#app = App()
 
-block_init = 657355
+# block_init = 6573
 
-app.loop_on_blockchain(block_init, block_init+864)
+#app.loop_on_blockchain(block_init, block_init+821)
 # app.loop_on_blockchain(block_init+14, block_init+28)
 # app.loop_on_blockchain(block_init+28, block_init+42)
 # app.loop_on_blockchain(block_init+42, block_init+56)
@@ -102,53 +102,53 @@ app.loop_on_blockchain(block_init, block_init+864)
 # app.loop_on_blockchain(block_init+112, block_init+126)
 # app.loop_on_blockchain(block_init+126, block_init+140)
 
-files = paralel(5)
-print(files)
-process = []
+#files = paralel(5)
+#print(files)
+#process = []
 
-p1 = Process(target=create_dfs(files[0]))
-process.append(p1)
-p1.start()
+#p1 = Process(target=create_dfs(files[0]))
+#process.append(p1)
+#p1.start()
 
-p2 = Process(target=create_dfs(files[1]))
-process.append(p2)
-p2.start()
+#p2 = Process(target=create_dfs(files[1]))
+#process.append(p2)
+#p2.start()
 
-p3 = Process(target=create_dfs(files[2]))
-process.append(p3)
-p3.start()
+#p3 = Process(target=create_dfs(files[2]))
+#process.append(p3)
+#p3.start()
 
-p4 = Process(target=create_dfs(files[3]))
-process.append(p4)
-p4.start()
+#p4 = Process(target=create_dfs(files[3]))
+#process.append(p4)
+#p4.start()
 
-p5 = Process(target=create_dfs(files[4]))
-process.append(p5)
-p5.start()
+#p5 = Process(target=create_dfs(files[4]))
+#process.append(p5)
+#p5.start()
 
-for p in process:
-    p.join()
+#for p in process:
+#    p.join()
 
-files = os.listdir('./NetworkBuilder/rawData')
+#files = os.listdir('./NetworkBuilder/rawData')
 
-create_vol(files)
+#create_vol(files)
 
 networks = os.listdir('./NetworkBuilder/network/')
 
 print(len(networks))
 
-chunk = chunkIt(networks, 16)
+#chunk = chunkIt(networks, 6)
 
-chunk = np.array_split(networks, 16)
+chunk = np.array_split(networks, 6)
 
-for i in range(0, 16):
+for i in range(0, len(chunk)):
     print(i)
     centralidades = {}
 
     for rede in range(0, len(chunk[i])):
         print(rede)
         print(chunk[i][rede])
-        print(len(chunk[rede]))
+        #print(len(chunk[rede]))
         t1 = time.time()
         g = fm.load('./NetworkBuilder/network/' + chunk[i][rede])
         BETWEENNESS_CENTRALITY = nx.betweenness_centrality(g)
